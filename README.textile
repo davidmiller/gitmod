@@ -1,4 +1,4 @@
-h2 Gitmod
+Gitmod
 
 Utility script that commits all files in a git reopsitory that 
 have no changes to the source but have been chmodded.

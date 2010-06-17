@@ -8,6 +8,7 @@ sub is_modechange {
     my $diff = `git diff $file`;
     my $lines = split(/\n/, $diff);
     my $numlines = length($lines);
+    print "$file\n$numlines\n";
     if ($numlines != 1){
         return 0;
     }
@@ -29,5 +30,6 @@ foreach my $file (@mod){
 
 if (length(@commits) > 0){
     print "we have commits!\n";
+    print "@commits\n";
     exec("git commit @commits -m 'Auto commit #perl'");
 }
