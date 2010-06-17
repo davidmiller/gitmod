@@ -1,0 +1,8 @@
+h2 Gitmod
+
+Utility script that commits all files in a git reopsitory that 
+have no changes to the source but have been chmodded.
+
+Which is useful when you recursively chmod a large working tree 
+which also has uncomitted changes that you'd rather keep that way
+for now.
